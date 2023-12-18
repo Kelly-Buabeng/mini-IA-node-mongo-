@@ -2,6 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 
+app.use(express.json())
+
 // routes
 app.get('/', (req, res) => {
   res.send('Hey,Welcome to UGMC web server');
