@@ -11,6 +11,10 @@ app.get('/blog', (req, res) => {
   res.send('Hey, Welcome to ugmc blog');
 });
 
+app.post('/Patient',(req,res) =>{
+  console.log(req.body);
+})
+
 mongoose
   .connect('mongodb+srv://kellybuabeng:wearehome@kellyapi.qufriw6.mongodb.net/kellyAPI?retryWrites=true&w=majority')
   .then(() => {
