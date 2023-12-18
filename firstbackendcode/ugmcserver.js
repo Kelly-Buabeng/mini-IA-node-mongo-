@@ -10,9 +10,10 @@ app.get('/', (req, res) => {
 app.get('/blog', (req, res) => {
   res.send('Hey, Welcome to ugmc blog');
 });
-
+ 
 app.post('/Patient',(req,res) =>{
   console.log(req.body);
+  res.send(req.body)
 })
 
 mongoose
